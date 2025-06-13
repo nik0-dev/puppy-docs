@@ -1,0 +1,17 @@
+<script>
+    function sidenavHide(elem) {
+        console.log(elem.className)
+        elem.parentElement.parentElement.style.display="none";
+    }
+</script>
+
+<div class="sidenav">
+    <div class="sidenav-header">
+        <button class="sidenav-back" onclick="sidenavHide(this)"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul>
+    {% for item in include.data %}
+    <li><a href="{{item.url}}">{% if item.icon %}<i class="{{ item.icon }} sidenav-link-icon"></i>{% endif %}{{ item.name }}</a></li>
+    {% endfor %}
+    </ul>
+</div>

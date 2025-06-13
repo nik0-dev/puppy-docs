@@ -1,0 +1,9 @@
+{
+    "main": [
+        {"name": "Home", "url": "/", "icon": "fa-solid fa-home"},
+        {"name": "API", "url": "#", "icon": "fa-solid fa-terminal"},
+        {"name": "Documentation", "url": "#", "icon": "fa-solid fa-book"},
+        {"name": "Blog", "url": "#", "icon": "fa-solid fa-pencil"},
+        {"name": "Github", "url": "https://github.com/nik0-dev/puppy-console", "icon": "fa-brands fa-github"}
+    ]
+}

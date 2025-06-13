@@ -1,0 +1,66 @@
+@use "globals/colors";
+@use "globals/fonts";
+
+* {
+    // border: 1px solid red; 
+}
+
+.sidenav {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav, .sidenav ul, .sidenav-back {
+    background-color: colors.$clr-surface-a10;
+    border: 2px solid colors.$clr-surface-a30;
+}
+
+.sidenav a, .sidenav-back {
+    transition: background-color 0.5s, color 0.2s;
+
+    &:hover {
+        background-color: colors.$clr-surface-a20;
+        color: colors.$clr-primary-a0;
+    }
+}
+
+.sidenav-header {
+    display: flex;
+    background-color: colors.$clr-primary-a0;
+}
+
+.sidenav-link-icon {
+    margin-right: 10px;
+    transition: color 0.5s;
+}
+
+.sidenav-back {
+    font-family: "Font Awesome";
+    color: colors.$clr-light-a0;
+    margin: 5px;
+    margin-left: auto;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.sidenav ul {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    gap: 10px;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: colors.$clr-light-a0;
+    font-weight: 500;
+    display: block;
+    padding: 5px 10px;
+}
+
+
